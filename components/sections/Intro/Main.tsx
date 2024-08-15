@@ -1,5 +1,6 @@
 import DownloadApp from "../DownloadApp";
 import FootAnalise from "../FootAnalise";
+import OrProduct from "../OrProduct";
 import Header from "./Header";
 import HeroBanner from "./HeroBanner";
 
@@ -10,6 +11,7 @@ const Main = () => {
       <HeroBanner />
       <FootAnalise />
       <DownloadApp />
+      <OrProduct />
     </div>
   );
 };
