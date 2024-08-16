@@ -1,6 +1,11 @@
+import Contacts from "../Contacts";
 import DownloadApp from "../DownloadApp";
+import Features from "../Features";
 import FootAnalise from "../FootAnalise";
+import Footer from "../Footer";
 import OrProduct from "../OrProduct";
+import OrTeam from "../OrTeam";
+import Testminials from "../Testminials";
 import Header from "./Header";
 import HeroBanner from "./HeroBanner";
 
@@ -12,6 +17,11 @@ const Main = () => {
       <FootAnalise />
       <DownloadApp />
       <OrProduct />
+      <OrTeam />
+      <Testminials />
+      <Features />
+      <Contacts />
+      <Footer />
     </div>
   );
 };
