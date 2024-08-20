@@ -3,15 +3,17 @@ import React from "react";
 import mobileFrame from "@/public/image/mobile-layer.svg";
 import IconButton from "../main/Button/IconButton";
 import nurse from "@/public/image/nurse.svg";
+import MobileAnime from "../animations/Mobile";
+import TextAnime from "../animations/Text";
 const FootAnalise = () => {
   return (
     <div className="w-full relative h-[100vh] flex flex-col justify-between items-center bg-gradient-to-b from-bg-main-color to-bg-sec-color">
-      <h2 className="text-black font-poppins font-bold text-[20px] lg:text-[30px] lg:mt-32 w-[80%] mt-10 text-center">
-        Experience the <span className="text-primary950">Ultimate</span> in
-        Insole Technology
-      </h2>
+      <TextAnime text="آنالیز کف پا مبتنی بر هوش مصنوعی رایگان">
+        <h2 className="text-black font-poppins font-bold text-[20px] lg:text-[30px] lg:mt-32 w-[80%] mt-10 text-center">
+          آنالیز کف پا مبتنی بر هوش مصنوعی (رایگان)
+        </h2>
+      </TextAnime>
       <MobileSteps />
-      <DesktopSteps />
       {/* <Image  /> */}
       <MobileImage />
     </div>
@@ -22,12 +24,18 @@ export default FootAnalise;
 
 function MobileSteps() {
   return (
-    <div className="md:hidden flex flex-row justify-start items-stretch w-[80%]">
+    <div
+      dir="rtl"
+      className="lg:hidden md:justify-center flex flex-row justify-start items-stretch w-[80%]"
+    >
       <LineSVGMobile />
-      <div className=" flex flex-col justify-between items-start text-[16px] w-[80%] pl-5">
-        <p>Arch Issues Using Advanced </p>
-        <p>Offering Precise and Free Analysis of Foot </p>
-        <p>Arch Issues Using Advanced </p>
+      <div className=" flex flex-col justify-between items-start text-[16px] w-fit pr-5">
+        <p> بررسی و نتیجه گیری با مدل سازی هوشمند کف پا نسبت به ده هزار مدل </p>
+        <p>
+          ارائه اپلیکیشن و وب اپ برای بررسی دقیق مشکلات کف پا با استفاده از
+          آخرین تکنولوژی روز دنیا و هوش مصنوعی{" "}
+        </p>
+        <p>بررسی و نتیجه گیری نهایی توسط تیم فیزیوتراپی پارس</p>
       </div>
     </div>
   );
@@ -35,53 +43,60 @@ function MobileSteps() {
 
 function DesktopSteps() {
   return (
-    <div className="hidden lg:block w-full h-full">
-      <div className="z-20 absolute flex flex-row justify-center gap-5 items-center bottom-[44%] right-[18%]">
+    <>
+      <div className="z-20 absolute hidden lg:flex flex-row justify-center gap-5 items-center top-[25%] -right-[95%]">
         <LineOne />
         <span className="w-64">
-          Arch Issues Using Advanced <span className="text-primary950">AI</span>{" "}
-          <span className="text-primary950">Technology</span> to Improve Your
-          Foot Health
+          ارائه اپلیکیشن و وب اپ برای بررسی دقیق مشکلات کف پا با استفاده از
+          آخرین تکنولوژی روز دنیا و هوش مصنوعی
         </span>
       </div>
-      <div className="z-20 flex flex-col justify-center items-start absolute bottom-0 left-[20%]">
+      <div className="z-20 hidden lg:flex absolute flex-row justify-center items-center gap-4 bottom-1/3 left-[80%]">
+        <LineThree />
+        <span className="w-36">
+          بررسی و نتیجه گیری با مدل سازی هوشمند کف پا نسبت به ده هزار مدل
+        </span>
+      </div>
+      <div className="z-20 hidden lg:flex  flex-col justify-center items-start absolute bottom-0 -left-[80%]">
         <span className="w-52 mb-4">
-          Offering Precise and Free Analysis of Foot{" "}
+          بررسی و نتیجه گیری نهایی توسط تیم فیزیوتراپی پارس
         </span>
         <div className="">
           <LineTwo />
         </div>
         <Image src={nurse} alt="" />
       </div>
-      <div className="z-20 absolute flex flex-row justify-center items-center gap-4 bottom-1/4 right-[23%]">
-        <LineThree />
-        <span className="w-36">Arch Issues Using Advanced </span>
-      </div>
-    </div>
+    </>
   );
 }
 
 function MobileImage() {
   return (
-    <div className=" relative  flex flex-row justify-center items-center">
-      <Image
-        className="w-[60%] lg:w-full z-0 object-cover"
-        src={mobileFrame}
-        alt=""
-      />
-      <div className="z-10 absolute top-[18%] left-1/2 -translate-x-1/2 w-[50%] lg:w-[75%] lg:top-[22%] bg-opacity-50 rounded-lg p-3">
-        <p className="text-black-bold font-bold text-[15px] lg:text-[28px] w-[40%] lg:leading-9 lg:mb-1 ">
-          <span className="text-primary950">Free</span> AI Analyze
-        </p>
-        <p className="text-black-bold text-[6px] lg:text-[12px]">
-          Welcome to our insole ordering application.
-        </p>
+    <MobileAnime>
+      <div className=" relative flex flex-row justify-center items-center mx-auto">
+        <DesktopSteps />
+        <Image
+          className="w-[60%] md:w-[80%] lg:w-full z-0 object-cover"
+          src={mobileFrame}
+          alt=""
+        />
+        <div
+          dir="rtl"
+          className="z-10 absolute top-[20%] left-1/2 -translate-x-1/2 w-[50%] md:top-[20%] lg:w-[75%] lg:top-[22%] bg-opacity-50 rounded-lg p-3"
+        >
+          <p className="text-black-bold w-32 font-bold text-right text-[10px] md:text-[16px] lg:text-[20px]  lg:leading-7 lg:mb-1 ">
+            آنالیز کف پا مبتنی بر هوش مصنوعی (رایگان)
+          </p>
+          <p className="text-black-bold text-right text-[6px] md:text-[10px] lg:text-[12px]">
+            با ما از کف پای خود آگاه باشید، همین الان آنالیز را شروع کنید.
+          </p>
+        </div>
+        <IconButton
+          className="z-10 absolute left-1/2 -translate-x-1/2 bottom-5 font-semibold text-[12px] lg:text-[18px] px-3 py-2 w-32 lg:w-44 lg:p-4 lg:rounded-2xl"
+          text=" شروع آنالیز"
+        />
       </div>
-      <IconButton
-        className="z-10 absolute left-1/2 -translate-x-1/2 bottom-5 font-semibold text-[12px] lg:text-[18px] px-3 py-2 w-32 lg:w-44 lg:p-4 lg:rounded-2xl"
-        text="Start For Free"
-      />
-    </div>
+    </MobileAnime>
   );
 }
 

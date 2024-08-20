@@ -22,15 +22,16 @@ const Header = () => {
   }, []);
   return (
     <header
-      className={`w-screen transition-all  ease-linear duration-150 justify-between flex py-4 px-5 fixed z-[100] ${
+      dir="rtl"
+      className={`w-screen transition-all  ease-linear duration-150 justify-between flex flex py-4 px-5 fixed z-[100] ${
         change ? "bg-white  shadow-md" : "bg-transparent"
       }`}
     >
       <div className="flex items-center gap-1">
         <Image src={"/image/Logo.svg"} alt=" " width={64} height={55} />
         <h1 className="text-[#009D6D] font-[700]">
-          <span className="text-[#3CCAFF]">Dr </span>
-          Foot
+          <span className="text-[#3CCAFF]">پارس </span>
+          پا
         </h1>
       </div>
       <nav className="hidden md:flex justify-between items-center gap-8">
@@ -38,29 +39,35 @@ const Header = () => {
           href="#contactus"
           className="text-title hover:text-gray6 transition-all ease-in-out  text-base Poppins-Light cursor-pointer group relative"
         >
-          ContactUs
+          ارتباط با ما
           <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
         </a>
-        <a className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative">
-          Our team
+        <a
+          href="#our-team"
+          className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
+        >
+          تیم ما
           <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
         </a>
-        <a className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative">
-          Our product
+        <a
+          href="#our-product"
+          className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
+        >
+          محصول ما
           <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
         </a>
       </nav>
       <div className="flex gap-2 items-center">
         <button className="px-8 hidden md:block py-2 bg-primary950 transition-all ease-out hover:bg-primary-900 hover:shadow-lg text-white rounded-xl">
-          Sign Up
+          ورود به وب اپ
         </button>
-        <button
+        {/* <button
           title="cart"
           onClick={() => console.log(123)}
           className="hover:opacity-60 transition-opacity ease-out"
         >
           <ShoppingCart color="#0C0C0C" size={34} />
-        </button>
+        </button> */}
         <button
           title="menu"
           onClick={() => console.log(123)}

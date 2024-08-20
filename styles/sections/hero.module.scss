@@ -1,0 +1,78 @@
+@keyframes SlideInText {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    translate: transformX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes toUp {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    translate: transformY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes toLeft {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    translate: transformX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes toRight {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    translate: transformX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveto {
+  from {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  to {
+    translate: transformX(-10%);
+    opacity: 1;
+  }
+}
+
+.move {
+  animation: moveto 2s 1s infinite;
+}
+
+.text {
+  animation: SlideInText 2s forwards;
+}
+
+.parag {
+  animation: toUp 2s forwards;
+}
+
+.image {
+  animation: toUp 2s 1s forwards;
+}
+
+.bgImage {
+  animation: toLeft 2s 1s forwards;
+}
+
+.frame {
+  animation: toRight 2s 1s forwards;
+}

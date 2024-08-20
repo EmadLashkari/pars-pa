@@ -1,0 +1,9 @@
+@keyframes slider {
+  0% {
+    transform: scaleX(5);
+  }
+}
+
+.card {
+  animation: slider 1s forwards;
+}

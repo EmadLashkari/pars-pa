@@ -15,18 +15,15 @@ function Contacts() {
         src={"/image/phone.svg"}
         width={100}
         height={100}
-        className="absolute w-[200px] bottom-0 sm:w-[500px] left-0"
+        className="absolute w-[200px] bottom-0 sm:w-[250px] lg:w-[500px] left-0"
         alt=""
       />
       <div className="flex flex-col justify-center items-center">
         <div className="sm:ps-32 flex flex-col justify-center items-center  gap-3">
-          <h3 className="text-3xl text-black Poppins-Bold">
-            <span className="text-primary900">Get in Touch </span>
-            with us
+          <h3 className="text-xl text-center text-black Poppins-Bold">
+            راه های ارتباط مستقیم با مشاوران و متخصصین ما
           </h3>
-          <p className="Poppins-Light text-title text-base">
-            Welcome to our insole ordering application.{" "}
-          </p>
+          <p className="Poppins-Light text-title text-base"></p>
         </div>
         <div className="grid gap-10 sm:gap-y-20 gap-x-32 grid-cols-2 md:grid-cols-4 mt-12">
           <div className="flex flex-col col-span-2 items-start justify-start">
