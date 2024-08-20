@@ -8,6 +8,7 @@ import {
   FaTelegram,
 } from "react-icons/fa";
 import { HiOutlineEnvelope } from "react-icons/hi2";
+import Logo from "@/public/image/Logo.svg";
 
 function Footer() {
   return (
@@ -60,11 +61,8 @@ function Footer() {
         </div>
         <div className="flex flex-col justify-center items-start  md:w-1/3">
           <div className="flex items-center justify-center gap-1">
-            <Image src={"/image/Logo.svg"} alt=" " width={93} height={80} />
-            <h1 className="text-[#009D6D] font-[700] text-3xl">
-              <span className="text-[#3CCAFF] text-3xl">Dr </span>
-              Foot
-            </h1>
+            <Image src={Logo} alt=" " width={93} height={80} />
+            <h1 className="text-[#009D6D] font-[700] text-3xl">پارس پا</h1>
           </div>
           <p className="text-[#505050] Poppins-Light text-start mt-4">
             با ارسال شماره همراه از آخرین بروزرسانی ها و اخبار تیم پارس پا مطلع

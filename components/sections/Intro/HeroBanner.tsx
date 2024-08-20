@@ -5,6 +5,7 @@ import BackImg from "@/public/image/back.svg";
 import SquareImg from "@/public/image/squre.svg";
 import { motion } from "framer-motion";
 import styles from "@/styles/sections/hero.module.scss";
+import arrow from "@/public/image/arrow.png";
 
 const HeroBanner = () => {
   return (
@@ -36,7 +37,7 @@ const HeroBanner = () => {
             width={10}
             height={10}
             alt=""
-            src={"/image/arrow.png"}
+            src={arrow}
             className="w-2 object-cover scale-x-[-1] group-hover:-translate-x-2 transition-all ease-linear duration-200"
           />
         </button>

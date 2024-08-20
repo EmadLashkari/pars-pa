@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { IoMdCall } from "react-icons/io";
 import { SlSocialInstagram } from "react-icons/sl";
-
+import phone from "@/public/image/phone.svg";
 function Contacts() {
   return (
     <section
@@ -12,7 +12,7 @@ function Contacts() {
       className="w-screen min-h-screen pb-72 pt-4  sm:pb-0 bg-primary100 flex justify-center items-center relative  "
     >
       <Image
-        src={"/image/phone.svg"}
+        src={phone}
         width={100}
         height={100}
         className="absolute w-[200px] bottom-0 sm:w-[250px] lg:w-[500px] left-0"

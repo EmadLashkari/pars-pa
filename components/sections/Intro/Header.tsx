@@ -2,7 +2,7 @@
 import { HambergerMenu, ShoppingCart } from "iconsax-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
+import Logo from "@/public/image/Logo.svg";
 const scrollValue = 50;
 
 const Header = () => {
@@ -28,7 +28,7 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center gap-1">
-        <Image src={"/image/Logo.svg"} alt=" " width={64} height={55} />
+        <Image src={Logo} alt=" " width={64} height={55} />
         <h1 className="text-[#009D6D] font-[700]">
           <span className="text-[#3CCAFF]">پارس </span>
           پا
