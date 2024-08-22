@@ -10,7 +10,7 @@ const IconButton = ({
 }) => {
   return (
     <button
-      className={`bg-[#28BCBE]  text-white flex flex-row justify-between items-center gap-3 p-3 rounded-lg ${className}`}
+      className={`bg-[#28BCBE]  text-white flex flex-row-reverse justify-between items-center gap-3 p-3 rounded-lg ${className}`}
     >
       <span>{text}</span>
       <Image
