@@ -9,6 +9,9 @@ import {
 } from "react-icons/fa";
 import { HiOutlineEnvelope } from "react-icons/hi2";
 import Logo from "@/public/image/Logo.svg";
+import insta from "@/public/image/instagram.svg";
+import tel from "@/public/image/telegram.svg";
+import eitaa from "@/public/image/eitaa.svg";
 
 function Footer() {
   return (
@@ -19,27 +22,28 @@ function Footer() {
       <div className="flex flex-col sm:flex-row w-full justify-start items-start sm:items-start gap-8 sm:gap-0 sm:justify-evenly">
         <div className="flex flex-col items-start ">
           {" "}
-          <h2 className="text-white text-2xl mb-4">تیم پارس پارا</h2>
+          <h2 className="text-white text-2xl mb-4">تیم پارس پا</h2>
           <p className="text-[#505050] Poppins-Light text-sm w-80">
-            شامل متخصصان فیزیوتراپی، کارشناسان نرم‌افزار و مهندسان طراحی و تولید
-            است. ما با بهره‌گیری از تحلیل‌های تخصصی، فناوری هوش مصنوعی و تولید
-            با کیفیت، کفی‌های کفش سفارشی و بهینه‌ای را برای بهبود راحتی و عملکرد
-            پاها ارائه می‌دهیم. هدف ما ارتقاء سلامت و راحتی شما از طریق تکنولوژی
-            و تخصص‌های پیشرفته است.
+            شامل متخصصان فیزیوتراپی، کارشناسان نرم‌افزار و مهندسان ارتوپد فنی
+            است. ما با بهره‌گیری از تحلیل‌های تخصصی و فناوری‌های هوش مصنوعی،
+            کفی‌های کفش منحصربفرد متناسب به اختلالات پای هر فرد ارائه می‌دهیم.
+            هدف ما ارتقاء سلامت و راحتی گام بر داشتن شما از طریق تکنولوژی و
+            تخصص‌های پیشرفته است.
           </p>
           <p
             dir="ltr"
             className="flex gap-1 mt-2 items-center text-[#505050] Poppins-Light text-lg"
           >
-            <Call size="20" color="#505050" /> +(98) 901-967-3075
+            <Call size="20" color="#505050" /> 051-038421313
           </p>
           <p className="flex gap-1 mt-2 items-center text-[#505050] Poppins-Light text-lg">
-            <HiOutlineEnvelope color="#505050" size={20} /> Info@drfoot.com
+            pars.pa.with.ai@gmail.com
+            <HiOutlineEnvelope color="#505050" size={20} />{" "}
           </p>
-          <div className="flex gap-4 mt-4">
-            <FaTelegram color="#505050" size={32} />
-            <FaLinkedin color="#505050" size={32} />
-            <FaInstagram color="#505050" size={32} />
+          <div className="flex flex-row justify-center items-center gap-4 mt-4">
+            <Image src={tel} alt="telegram icon" className="w-10 h-10" />
+            <Image src={insta} alt="instagram icon" className="w-10 h-10" />
+            <Image src={eitaa} alt="eitaa icon" className="w-8 h-8" />
           </div>
         </div>
         <div className="flex flex-col items-start sm:items-center ">
@@ -85,7 +89,7 @@ function Footer() {
 
       <div className="w-full mt-8 flex items-center justify-center">
         <p className="text-[#505050] text-lg Poppins-Light py-4">
-          Copyright © Dr foot | All rights reserved.
+          تمامی حقوق و محتوا برای تیم پارس پا محفوظ می باشد.
         </p>
       </div>
     </footer>

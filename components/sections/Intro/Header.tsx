@@ -39,11 +39,32 @@ const Header = () => {
           href="#contactus"
           className="text-title hover:text-gray6 transition-all ease-in-out  text-base Poppins-Light cursor-pointer group relative"
         >
-          ارتباط با ما
+          خانه
           <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
         </a>
         <a
           href="#our-team"
+          className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
+        >
+          آنالیز
+          <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
+        </a>
+        <a
+          href="#our-product"
+          className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
+        >
+          اپلیکیشن
+          <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
+        </a>
+        <a
+          href="#our-product"
+          className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
+        >
+          کفی
+          <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
+        </a>
+        <a
+          href="#our-product"
           className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
         >
           تیم ما
@@ -53,13 +74,20 @@ const Header = () => {
           href="#our-product"
           className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
         >
-          محصول ما
+          نظرات
+          <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
+        </a>
+        <a
+          href="#our-product"
+          className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
+        >
+          ارتباط با ما
           <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
         </a>
       </nav>
       <div className="flex gap-2 items-center">
         <button className="px-8 hidden md:block py-2 bg-primary950 transition-all ease-out hover:bg-primary-900 hover:shadow-lg text-white rounded-xl">
-          ورود به وب اپ
+          ورود
         </button>
         {/* <button
           title="cart"

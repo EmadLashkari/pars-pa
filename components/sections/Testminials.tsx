@@ -11,7 +11,7 @@ const Testminials = () => {
       className="bg-white w-full flex flex-col lg:flex-row justify-center items-center lg:items-stretch lg:justify-around lg:py-20"
     >
       <Info />
-      <div className="flex flex-col gap-4 pb-10 pl-5">
+      <div className="flex flex-col h-[500px] overflow-y-scroll pr-5 gap-4 pb-10 pl-5">
         {data.map((item, index) => {
           return (
             <div key={item.name}>
@@ -44,7 +44,7 @@ function Info() {
           نظرات مشتریان ما را مشاهده می‌کنید.
         </p>
       </div>
-      <IconButton text="بیشتر" />
+      {/* <IconButton text="بیشتر" /> */}
     </div>
   );
 }
@@ -98,9 +98,7 @@ function CardDesktop({
 }) {
   return (
     <div
-      className={`${
-        index === 1 && "translate-x-20 border-blue-400"
-      } w-[40rem] hidden border-[#C6EDF7] border-s-[10px] lg:flex flex-col justify-between items-start bg-opacity-25 bg-[#C6EDF7] p-5 rounded-3xl`}
+      className={`hover:translate-x-5 transition-all ease-in-out hover:border-blue-400 w-[40rem] hidden border-[#C6EDF7] border-s-[10px] lg:flex flex-col justify-between items-start bg-opacity-25 bg-[#C6EDF7] p-5 rounded-3xl`}
     >
       <div className="flex flex-row justify-center items-center">
         <Image

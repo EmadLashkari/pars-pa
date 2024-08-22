@@ -10,7 +10,7 @@ const DownloadApp = () => {
   return (
     <div
       dir="rtl"
-      className="w-full h-[100vh] lg:h-[70vh] bg-white lg:bg-bg-sec-color flex flex-col justify-around py-5 items-center lg:px-20 lg:flex-row"
+      className="w-full h-[100vh]  bg-white lg:bg-bg-sec-color flex flex-col justify-around py-5 items-center lg:px-20 lg:flex-row"
     >
       <Discription />
 
@@ -41,11 +41,11 @@ function Discription() {
           اپلیکیشن پارس پا
         </h2>
         <p className="text-[16px] mt-5 text-gray-thin leading-[33px] lg:w-[23rem]">
-          اپلیکیشن پارس پا با بهره‌گیری از هوش مصنوعی و نظر تخصصی پزشکان
-          فیزیوتراپ، پاهای شما را به دقت آنالیز می‌کند و راه‌حل‌های سفارشی برای
-          طراحی و تولید کفی‌های طبی ارائه می‌دهد. با اپلیکیشن هوشمند پارس پا،
-          پاهای خود را به دقت آنالیز کنید و با مشاوره آنلاین پزشکان متخصص
-          فیزیوتراپ، کفی‌های طبی اختصاصی و متناسب با نیازتان سفارش دهید.
+          اپلیکیشن پارس پا با بهره‌گیری از هوش مصنوعی و مشاوره تخصصی
+          فیزیوتراپیست‌های تیم پاهای شما را به دقت آنالیز می‌کند و منطبق بر آن
+          کفی منحصربفرد پای شما طراحی میشود. با اپلیکیشن هوشمند پارس پا، پاهای
+          خود را به دقت بالا آنالیز کنید و با مشاوره آنلاین تیم فیزیوتراپیست‌های
+          ما، کفی‌های مخصوص پای خود را سفارش دهید.
         </p>
       </div>
     </TextFadeIn>

@@ -19,7 +19,7 @@ const OrProduct = () => {
             کفی پارس پا
           </h2>
           <p className="text-black-bold text-center">
-            میدونی کفی پارس پا پا مشکلاتی را پوشش میدهد؟
+            میدونی کفی پارس پا اختلال‌هایی را پوشش میدهد؟
           </p>
           <div className="mt-5 lg:mt-20 flex flex-row justify-center items-center">
             <Image src={Shous} alt="" />

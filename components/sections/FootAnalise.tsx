@@ -30,7 +30,9 @@ function MobileSteps() {
     >
       <LineSVGMobile />
       <div className=" flex flex-col justify-between items-start text-[16px] w-fit pr-5">
-        <p> بررسی و نتیجه گیری با مدل سازی هوشمند کف پا نسبت به ده هزار مدل </p>
+        <p>
+          بررسی و نتیجه گیری با مدل سازی هوشمند کف پا نسبت به ده هزار مدل مشابه
+        </p>
         <p>
           ارائه اپلیکیشن و وب اپ برای بررسی دقیق مشکلات کف پا با استفاده از
           آخرین تکنولوژی روز دنیا و هوش مصنوعی{" "}
@@ -46,20 +48,20 @@ function DesktopSteps() {
     <>
       <div className="z-20 absolute hidden lg:flex flex-row justify-center gap-5 items-center top-[25%] -right-[95%]">
         <LineOne />
-        <span className="w-64">
+        <span dir="rtl" className="w-64">
           ارائه اپلیکیشن و وب اپ برای بررسی دقیق مشکلات کف پا با استفاده از
           آخرین تکنولوژی روز دنیا و هوش مصنوعی
         </span>
       </div>
       <div className="z-20 hidden lg:flex absolute flex-row justify-center items-center gap-4 bottom-1/3 left-[80%]">
         <LineThree />
-        <span className="w-36">
-          بررسی و نتیجه گیری با مدل سازی هوشمند کف پا نسبت به ده هزار مدل
+        <span dir="rtl" className="w-36">
+          بررسی و نتیجه گیری با مدل سازی هوشمند کف پا نسبت به ده هزار مدل مشابه
         </span>
       </div>
       <div className="z-20 hidden lg:flex  flex-col justify-center items-start absolute bottom-0 -left-[80%]">
-        <span className="w-52 mb-4">
-          بررسی و نتیجه گیری نهایی توسط تیم فیزیوتراپی پارس
+        <span dir="rtl" className="w-52 mb-4">
+          بررسی و نتیجه گیری نهایی توسط تیم فیزیوتراپی
         </span>
         <div className="">
           <LineTwo />
@@ -76,19 +78,20 @@ function MobileImage() {
       <div className=" relative flex flex-row justify-center items-center mx-auto">
         <DesktopSteps />
         <Image
-          className="w-[60%] md:w-[80%] lg:w-full z-0 object-cover"
+          className="w-[60%] md:w-[80%] lg:w-[90%] z-0 object-cover"
           src={mobileFrame}
           alt=""
         />
         <div
           dir="rtl"
-          className="z-10 absolute top-[20%] left-1/2 -translate-x-1/2 w-[50%] md:top-[20%] lg:w-[75%] lg:top-[22%] bg-opacity-50 rounded-lg p-3"
+          className="z-10 absolute top-[20%] left-1/2 -translate-x-1/2 w-[50%] md:top-[20%] lg:w-[75%] lg:top-[18%] bg-opacity-50 rounded-lg p-3"
         >
-          <p className="text-black-bold w-32 font-bold text-right text-[10px] md:text-[16px] lg:text-[20px]  lg:leading-7 lg:mb-1 ">
-            آنالیز کف پا مبتنی بر هوش مصنوعی (رایگان)
+          <p className="text-black-bold w-32 font-bold text-right text-[10px] md:text-[16px] lg:text-[16px]  lg:leading-7 lg:mb-1 ">
+            آنالیز کف پا مبتنی بر هوش مصنوعی
           </p>
           <p className="text-black-bold text-right text-[6px] md:text-[10px] lg:text-[12px]">
-            با ما از کف پای خود آگاه باشید، همین الان آنالیز را شروع کنید.
+            با ما از اختلالات کف پای خود آگاه شوید، همین الان آنالیز رو شروع
+            کنید.
           </p>
         </div>
         <IconButton

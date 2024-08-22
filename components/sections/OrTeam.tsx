@@ -2,6 +2,10 @@ import Doctor from "@/public/image/medicalCare.svg";
 import Image from "next/image";
 import Fisiotrap from "@/public/image/fisiyotrap.svg";
 import styles from "@/styles/sections/ourteam.module.scss";
+import TextFadeIn from "../animations/TextFade";
+import CardSliderAnime from "../animations/CardSlider";
+import AI from "@/public/image/AI.svg";
+import Team from "@/public/image/Team.svg";
 
 const OrTeam = () => {
   return (
@@ -11,7 +15,30 @@ const OrTeam = () => {
     >
       <Title />
       <div className="mt-20 flex flex-col items-center lg:flex-row lg:justify-around">
-        <CardSlider />
+        <CardSliderAnime
+          data={[
+            {
+              title: "تیم فیزیوتراپ",
+              url: Doctor,
+              discription:
+                "پزشکان و متخصصان فیزیوتراپی که با بررسی دقیق و تحلیل علمی وضعیت پاهای شما، نیازهای خاص هر فرد را شناسایی و مشاوره‌های تخصصی ارائه می‌دهند. این تحلیل‌ها مبنای طراحی کفی‌های اختصاصی و بهینه برای هر فرد خواهد بود",
+            },
+            {
+              title: "تیم نرم‌افزاری و پیاده‌سازی هوش مصنوعی",
+              discription:
+                "پزشکان و متخصصان فیزیوتراپی که با بررسی دقیق و تحلیل علمی وضعیت پاهای شما، نیازهای خاص هر فرد را شناسایی و مشاوره‌های تخصصی ارائه می‌دهند. این تحلیل‌ها مبنای طراحی کفی‌های اختصاصی و بهینه برای هر فرد خواهد بود",
+              url: AI,
+            },
+            {
+              title: "تیم طراحی و تولید کفی کفش",
+              discription:
+                "طراحان و مهندسان تولید که با بهره‌گیری از نتایج تحلیل‌های فیزیوتراپی و داده‌های نرم‌افزاری، کفی‌های کفش را طراحی و تولید می‌کنند. استفاده از تکنولوژی‌های پیشرفته در این بخش به تضمین کیفیت و تطابق کفی‌ها با نیازهای فردی کمک می‌کند",
+              url: Team,
+            },
+          ]}
+        >
+          <CardSlider />
+        </CardSliderAnime>
         <DoctorImage />
       </div>
     </div>
@@ -68,9 +95,11 @@ function Card({
 
 function DoctorImage() {
   return (
-    <div className="flex justify-center  w-full">
-      <Image src={Fisiotrap} className="lg:w-[500px]" alt="" />
-    </div>
+    <TextFadeIn>
+      <div className="flex justify-center  w-full">
+        <Image src={Fisiotrap} className="lg:w-[400px]" alt="" />
+      </div>
+    </TextFadeIn>
   );
 }
 

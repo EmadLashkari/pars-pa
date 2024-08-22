@@ -19,8 +19,8 @@ function Features() {
           چرا پارس پا ؟
         </h2>
         <p className="text-title Poppins-ExtraLight text-center mt-4">
-          هدف ما آنالیز و طراحی و تولید محصولی بوده که بتوانیم نظر شما را با
-          کیفیت خوبمان جلب کنیم
+          هدف ما طراحی و تولید کفی‌های منحصربفردی است که متناسب با اختلالات کف
+          پای شما باشد.
         </p>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-4 w-full">
           <div className="bg-white transition-all ease-linear hover:shadow-lg rounded-2xl gap-8 p-4 w-full flex justify-between items-center">
@@ -36,15 +36,19 @@ function Features() {
             <Headphone size="32" color="#28BCBE" />
           </div>
           <div className="bg-white   transition-all ease-linear hover:shadow-lg rounded-2xl gap-8 p-4 w-full flex justify-between items-center">
-            <p className="text-title text-base">کاهش درد و بهبود راحتی</p>
+            <p className="text-title text-base">
+              بهبودی علائم ناشی از اختلالات کف پا
+            </p>
             <Diagram size="32" color="#28BCBE" />
           </div>
           <div className="bg-white transition-all ease-linear hover:shadow-lg  rounded-2xl gap-8 p-4 w-full flex justify-between items-center">
-            <p className="text-title text-base">پیشگیری از مشکلات آینده</p>
+            <p className="text-title text-base">
+              پیشگیری از عوارض ناشی از اختلالات کف پا
+            </p>
             <ShoppingCart size="32" color="#28BCBE" />
           </div>
           <div className="bg-white  transition-all ease-linear hover:shadow-lg rounded-2xl gap-8 p-4 w-full flex justify-between items-center">
-            <p className="text-title text-base">سفارشی‌سازی کامل</p>
+            <p className="text-title text-base">طراحی و تولید منحصربفرد</p>
             <Wallet size="32" color="#28BCBE" />
           </div>
         </div>

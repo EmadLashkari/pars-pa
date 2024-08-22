@@ -11,28 +11,27 @@ const HeroBanner = () => {
   return (
     <section
       dir="rtl"
-      className="w-full flex flex-col lg:flex-row justify-between items-center lg:items-center lg:justify-around overflow-hidden"
+      className="w-full h-[100vh] flex flex-col lg:flex-row justify-between items-center lg:items-center lg:justify-around overflow-hidden"
     >
       <div className=" w-fit flex flex-col items-center md:items-start lg:ml-10 sm:px-5 gap-5">
         <h1
-          className={`${styles.text} text-[30px] md:text-[36px] w-[288px] md:w-[491px] md:text-start pt-[130px] lg:pt-0 text-center leading-snug font-poppins font-bold text-black `}
+          className={`${styles.text} text-[25px] md:text-[36px] w-[288px] md:w-[491px] md:text-start pt-[130px] lg:pt-0 text-center leading-snug font-poppins font-bold text-black `}
         >
-          آنالیز کف پا با استفاده از{" "}
-          <span className="text-primary950 px-2">هوش مصنوعی</span> به صورت
-          رایگان
+          آنالیز <span className="text-primary950 px-2">رایگان</span> کف پا
+          مبتنی بر هوش مصنوعی
         </h1>
         <p
-          className={`text-[#424242] w-80 sm:w-[525px] md:text-start text-center leading-8 font-poppins font-normal text-[16px] ${styles.parag}`}
+          className={`text-[#424242] w-80 sm:w-[525px] md:text-start text-center leading-8 font-poppins font-normal text-[14px] ${styles.parag}`}
         >
-          ما با بهره‌گیری از هوش مصنوعی و مشاوره تخصصی پزشکان فیزیوتراپ، پاهای
+          ما با بهره‌گیری از هوش مصنوعی و مشاوره تخصصی فیزیوتراپیست‌ها، پاهای
           شما را به صورت رایگان آنالیز می‌کنیم و شما را نسبت به وضعیت کف پایتان
-          آگاه میکنیم. همچنین در صورت نیاز با استفاده از دستگاه‌های پیشرفته و
-          هوشمند، کفی‌های مخصوص هر پای شما طراحی میکنیم.
+          آگاه میکنیم. همچنین در صورت نیاز، با استفاده از دستگاه‌های پیشرفته و
+          هوشمند، کفی‌های مخصوص هر پای شما طراحی و تولید میکنیم.
         </p>
         <button
           className={`bg-primary950 p-4 gap-3 hover:bg-primary800 shadow-lg hover:shadow-2xl transition-all ease-linear group text-white rounded-[15px] text-lg flex Poppins-SemiBold justify-around items-center ${styles.parag} `}
         >
-          شروع فرایند آنالیز
+          شروع آنالیز
           <Image
             width={10}
             height={10}
@@ -51,11 +50,11 @@ export default HeroBanner;
 
 function DoctorImage() {
   return (
-    <div className="relative flex justify-center lg:h-full w-auto mt-10 overflow-visible lg:mt-10 lg:mr-10">
+    <div className="relative flex justify-center  w-auto mt-10 overflow-visible lg:mt-10 lg:mr-10">
       <Image
         src={Doctor}
         alt=""
-        className={`w-[250px] h-[343px] static z-50  lg:w-[468px] lg:h-[650px] ${styles.image}`}
+        className={`w-[250px] h-[343px]  z-50  lg:w-[468px] lg:h-[650px] ${styles.image}`}
       />
       <div
         className={`z-0 absolute bottom-0 left-0 ${styles.bgImage} ${styles.move}`}
