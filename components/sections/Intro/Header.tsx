@@ -1,9 +1,12 @@
 "use client";
 import { HambergerMenu, ShoppingCart } from "iconsax-react";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { SVGProps, useEffect, useRef, useState } from "react";
 import Logo from "@/public/image/Logo.svg";
+import { MotionProps, useCycle } from "framer-motion";
+import { useDimensions } from "@/components/utils/navbar/useDimensions";
 const scrollValue = 50;
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [change, setChange] = useState(false);
@@ -23,7 +26,7 @@ const Header = () => {
   return (
     <header
       dir="rtl"
-      className={`w-screen transition-all  ease-linear duration-150 justify-between flex flex py-4 px-5 fixed z-[100] ${
+      className={`w-screen transition-all  ease-linear duration-150 justify-between flex py-4 px-5 fixed z-40 ${
         change ? "bg-white  shadow-md" : "bg-transparent"
       }`}
     >
@@ -96,13 +99,13 @@ const Header = () => {
         >
           <ShoppingCart color="#0C0C0C" size={34} />
         </button> */}
-        <button
+        {/* <button
           title="menu"
           onClick={() => console.log(123)}
           className="block md:hidden"
         >
           <HambergerMenu color="#0C0C0C" size={34} />
-        </button>
+        </button> */}
       </div>
     </header>
   );

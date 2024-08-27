@@ -54,7 +54,7 @@ function DoctorImage() {
       <Image
         src={Doctor}
         alt=""
-        className={`w-[250px] h-[343px]  z-50  lg:w-[468px] lg:h-[650px] ${styles.image}`}
+        className={`w-[250px] h-[343px]  z-30  lg:w-[468px] lg:h-[650px] ${styles.image}`}
       />
       <div
         className={`z-0 absolute bottom-0 left-0 ${styles.bgImage} ${styles.move}`}

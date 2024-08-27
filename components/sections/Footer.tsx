@@ -1,12 +1,6 @@
 import { Call } from "iconsax-react";
 import Image from "next/image";
 import React from "react";
-import {
-  FaInstagram,
-  FaLinkedin,
-  FaRegEnvelope,
-  FaTelegram,
-} from "react-icons/fa";
 import { HiOutlineEnvelope } from "react-icons/hi2";
 import Logo from "@/public/image/Logo.svg";
 import insta from "@/public/image/instagram.svg";
@@ -19,7 +13,7 @@ function Footer() {
       dir="rtl"
       className="w-screen bg-[#28BCBE63] px-8 md:px-8 lg:px-18 pt-12 flex flex-col items-center justify-start"
     >
-      <div className="flex flex-col sm:flex-row w-full justify-start items-start sm:items-start gap-8 sm:gap-0 sm:justify-evenly">
+      <div className="flex flex-col sm:flex-row w-full justify-start items-start sm:items-start lg:justify-around gap-8 sm:gap-0 sm:justify-evenly">
         <div className="flex flex-col items-start ">
           {" "}
           <h2 className="text-white text-2xl mb-4">تیم پارس پا</h2>
@@ -32,7 +26,7 @@ function Footer() {
           </p>
           <p
             dir="ltr"
-            className="flex gap-1 mt-2 items-center text-[#505050] Poppins-Light text-lg"
+            className="flex pt-7 gap-1 mt-2 items-center text-[#505050] Poppins-Light text-lg"
           >
             <Call size="20" color="#505050" /> 051-038421313
           </p>
@@ -40,26 +34,37 @@ function Footer() {
             pars.pa.with.ai@gmail.com
             <HiOutlineEnvelope color="#505050" size={20} />{" "}
           </p>
-          <div className="flex flex-row justify-center items-center gap-4 mt-4">
-            <Image src={tel} alt="telegram icon" className="w-10 h-10" />
-            <Image src={insta} alt="instagram icon" className="w-10 h-10" />
-            <Image src={eitaa} alt="eitaa icon" className="w-8 h-8" />
-          </div>
         </div>
         <div className="flex flex-col items-start sm:items-center ">
           <h2 className="text-white text-2xl mb-4">لینک های محبوب</h2>
-          <ul>
-            <li className="text-lg Poppins-Light text-[#505050]">
-              <a href="">درباره ما</a>
+          <ul className="flex flex-col justify-center items-start gap-3">
+            <li className="text-lg Poppins-Light text-[#505050] relative">
+              <a href="">خانه</a>
+              <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
             </li>
-            <li className="text-lg Poppins-Light text-[#505050]">
-              <a href="">ارتباط با ما</a>
+            <li className="text-lg Poppins-Light text-[#505050] relative">
+              <a href="">آنالیز</a>
+              <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
             </li>
-            <li className="text-lg Poppins-Light text-[#505050]">
+            <li className="text-lg Poppins-Light text-[#505050] relative">
+              <a href="">اپلیکیشن</a>
+              <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
+            </li>
+            <li className="text-lg Poppins-Light text-[#505050] relative">
+              <a href="">کفی</a>
+              <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
+            </li>
+            <li className="text-lg Poppins-Light text-[#505050] relative">
               <a href="">تیم ما</a>
+              <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
             </li>
-            <li className="text-lg Poppins-Light text-[#505050]">
-              <a href="">محصول ما</a>
+            <li className="text-lg Poppins-Light text-[#505050] relative">
+              <a href="">نظرات</a>
+              <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
+            </li>
+            <li className="text-lg Poppins-Light text-[#505050] relative">
+              <a href="">ارتباط با ما</a>
+              <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
             </li>
           </ul>
         </div>
@@ -83,6 +88,11 @@ function Footer() {
             <button className="w-full px-2 hover:text-white hover:shadow-lg transition-all ease-linear md:w-1/4 h-12 text-center rounded-xl bg-[#60C2B7] text-[#505050]">
               ارسال
             </button>
+          </div>
+          <div className="flex flex-row justify-center items-center gap-4 mt-4">
+            <Image src={tel} alt="telegram icon" className="w-10 h-10" />
+            <Image src={insta} alt="instagram icon" className="w-10 h-10" />
+            <Image src={eitaa} alt="eitaa icon" className="w-8 h-8" />
           </div>
         </div>
       </div>

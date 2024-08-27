@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { poppins } from "@/utils/fonts";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 export const metadata: Metadata = {
   title: "پارس پا",
@@ -14,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <Suspense fallback={<Loading />}>
+        <body className={poppins.className}>{children}</body>
+      </Suspense>
     </html>
   );
 }
