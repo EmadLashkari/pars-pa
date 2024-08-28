@@ -14,10 +14,15 @@ const Testminials = () => {
       <div className="flex flex-col h-[500px] overflow-y-scroll pr-5 gap-4 pb-10 pl-5">
         {data.map((item, index) => {
           return (
-            <div key={item.name}>
-              <CardMobile title={item.title} url={item.url} name={item.name} />
+            <div key={item.title}>
+              <CardMobile
+                rate={item.rate}
+                title={item.title}
+                url={item.url}
+                name={item.name}
+              />
               <CardDesktop
-                key={item.name}
+                key={item.title}
                 index={index}
                 title={item.title}
                 url={item.url}
@@ -53,20 +58,21 @@ function CardMobile({
   name,
   url,
   title,
+  rate,
 }: {
   name: string;
   url: any;
   title: string;
+  rate: number;
 }) {
+  const numbers = [...Array(rate)].map((_, index) => index + 1);
   return (
     <div className="w-[20rem] lg:hidden border-[#C6EDF7] border-s-[10px] flex flex-col justify-between items-start bg-opacity-25 bg-[#C6EDF7] p-5 rounded-3xl">
       <div className="w-full px-2 flex flex-row justify-between items-center">
         <div className="self-end flex justify-end gap-2">
-          <IoStar className="text-[#FFA800] text-lg" />
-          <IoStar className="text-[#FFA800] text-lg" />
-          <IoStar className="text-[#FFA800] text-lg" />
-          <IoStar className="text-[#FFE8AF] text-lg" />
-          <IoStar className="text-[#FFE8AF] text-lg" />
+          {numbers.map((item) => (
+            <IoStar key={item} className="text-[#FFA800] text-lg" />
+          ))}
         </div>
         <FaQuoteLeft className="text-[#8F8F8F] transition-all ease-linear text-2xl group-hover:text-[#28BCBE]" />
       </div>

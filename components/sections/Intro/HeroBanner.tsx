@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import Doctor from "@/public/image/young-doctor-sec1.svg";
+import Doctor from "@/public/image/young-doctor-smiling.png";
 import BackImg from "@/public/image/back.svg";
 import SquareImg from "@/public/image/squre.svg";
 import { motion } from "framer-motion";
 import styles from "@/styles/sections/hero.module.scss";
 import arrow from "@/public/image/arrow.png";
+import Counter from "@/components/animations/Counter";
 
 const HeroBanner = () => {
   return (
@@ -40,6 +41,17 @@ const HeroBanner = () => {
             className="w-2 object-cover scale-x-[-1] group-hover:-translate-x-2 transition-all ease-linear duration-200"
           />
         </button>
+        <div>
+          <div className="flex flex-row justify-center items-center lg:pt-20 gap-2">
+            <Counter />
+            <span className="font-bold text-[30px] lg:font-extrabold lg:text-[40px] text-primary900">
+              +
+            </span>
+          </div>
+          <div>
+            <span className="lg:text-[20px] lg:font-bold">مشتری های ما</span>
+          </div>
+        </div>
       </div>
       <DoctorImage />
     </section>
@@ -54,7 +66,7 @@ function DoctorImage() {
       <Image
         src={Doctor}
         alt=""
-        className={`w-[250px] h-[343px]  z-30  lg:w-[468px] lg:h-[650px] ${styles.image}`}
+        className={`w-[280px] h-[343px]  z-30  lg:w-[650px] lg:h-[750px] ${styles.image}`}
       />
       <div
         className={`z-0 absolute bottom-0 left-0 ${styles.bgImage} ${styles.move}`}

@@ -1,6 +1,7 @@
 import Contacts from "../Contacts";
 import DownloadApp from "../DownloadApp";
 import Features from "../Features";
+import FeetProblems from "../FeetProblems";
 import FootAnalise from "../FootAnalise";
 import Footer from "../Footer";
 import OrProduct from "../OrProduct";
@@ -18,6 +19,7 @@ const Main = () => {
       <HeroBanner />
       <FootAnalise />
       <DownloadApp />
+      <FeetProblems />
       <OrProduct />
       <OrTeam />
       <Testminials />
