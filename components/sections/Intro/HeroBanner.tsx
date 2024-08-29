@@ -12,7 +12,7 @@ const HeroBanner = () => {
   return (
     <section
       dir="rtl"
-      className="w-full h-[100vh] flex flex-col lg:flex-row justify-between items-center lg:items-center lg:justify-around overflow-hidden"
+      className="w-full h-auto flex flex-col lg:flex-row justify-between items-center lg:items-center lg:justify-around overflow-hidden"
     >
       <div className=" w-fit flex flex-col items-center md:items-start lg:ml-10 sm:px-5 gap-5">
         <h1
@@ -49,7 +49,9 @@ const HeroBanner = () => {
             </span>
           </div>
           <div>
-            <span className="lg:text-[20px] lg:font-bold">مشتری های ما</span>
+            <span className="lg:text-[20px] lg:font-bold">
+              افراد آنالیز شده
+            </span>
           </div>
         </div>
       </div>

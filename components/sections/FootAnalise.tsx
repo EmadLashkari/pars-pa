@@ -7,7 +7,7 @@ import MobileAnime from "../animations/Mobile";
 import TextAnime from "../animations/Text";
 const FootAnalise = () => {
   return (
-    <div className="w-full relative h-[100vh] flex flex-col justify-between items-center bg-gradient-to-b from-bg-main-color to-bg-sec-color">
+    <div className="w-full relative gap-10 h-full flex flex-col justify-between items-center bg-gradient-to-b from-bg-main-color to-bg-sec-color">
       <TextAnime text="آنالیز کف پا مبتنی بر هوش مصنوعی رایگان">
         <h2 className="text-black font-poppins font-bold text-[20px] lg:text-[30px] lg:mt-32 w-[80%] mt-10 text-center">
           آنالیز کف پا مبتنی بر هوش مصنوعی (رایگان)
