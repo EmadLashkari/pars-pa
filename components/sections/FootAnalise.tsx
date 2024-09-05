@@ -5,6 +5,7 @@ import IconButton from "../main/Button/IconButton";
 import nurse from "@/public/image/nurse.svg";
 import MobileAnime from "../animations/Mobile";
 import TextAnime from "../animations/Text";
+import Link from "next/link";
 const FootAnalise = () => {
   return (
     <div
@@ -97,10 +98,12 @@ function MobileImage() {
             کنید.
           </p>
         </div>
-        <IconButton
-          className="z-10 absolute left-1/2 -translate-x-1/2 bottom-5 font-semibold text-[12px] lg:text-[18px] px-3 py-2 w-32 lg:w-44 lg:p-4 lg:rounded-2xl"
-          text=" شروع آنالیز"
-        />
+        <Link href={"https://web.parspa-ai.ir/login"}>
+          <IconButton
+            className="z-10 absolute left-1/2 -translate-x-1/2 bottom-5 font-semibold text-[12px] lg:text-[18px] px-3 py-2 w-32 lg:w-44 lg:p-4 lg:rounded-2xl"
+            text=" شروع آنالیز"
+          />
+        </Link>
       </div>
     </MobileAnime>
   );

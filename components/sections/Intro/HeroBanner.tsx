@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Doctor from "@/public/image/young-doctor-smiling.png";
+import Doctor from "@/public/image/foot-hero.png";
 import BackImg from "@/public/image/back.svg";
 import SquareImg from "@/public/image/squre.svg";
 import { motion } from "framer-motion";
@@ -15,7 +15,7 @@ const HeroBanner = () => {
       dir="rtl"
       className="w-full h-auto flex flex-col lg:flex-row justify-between items-center lg:items-center lg:justify-around overflow-hidden"
     >
-      <div className=" w-fit flex flex-col items-center md:items-start lg:ml-10 sm:px-5 gap-5">
+      <div className=" w-fit flex flex-col items-center md:items-start lg:mt-24 lg:ml-10 sm:px-5 gap-5">
         <h1
           className={`${styles.text} text-[25px] md:text-[36px] w-[288px] md:w-[491px] md:text-start pt-[130px] lg:pt-0 text-center leading-snug font-poppins font-bold text-black `}
         >
@@ -70,7 +70,7 @@ function DoctorImage() {
       <Image
         src={Doctor}
         alt=""
-        className={`w-[280px] h-[343px]  z-30  lg:w-[550px] lg:h-[650px] ${styles.image}`}
+        className={`w-[280px] h-[343px]  z-30  lg:w-[250px] lg:h-[350px] ${styles.image}`}
       />
       <div
         className={`z-0 absolute bottom-0 left-0 ${styles.bgImage} ${styles.move}`}
