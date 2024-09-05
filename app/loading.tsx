@@ -1,5 +1,5 @@
 import "@/app/loading.css";
-const Loading = () => {
+export default function Loading() {
   return (
     <div>
       <div className="wrapper">
@@ -14,6 +14,4 @@ const Loading = () => {
       </div>
     </div>
   );
-};
-
-export default Loading;
+}
