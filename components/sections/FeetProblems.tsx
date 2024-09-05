@@ -7,6 +7,7 @@ import bun from "@/public/image/pa-zarbdari.jpg";
 import backpain from "@/public/image/back-pain.jpg";
 import walking from "@/public/image/fatigue-walking.png";
 import ankle from "@/public/image/pichkhordegi.jpg";
+import TextFadeIn from "../animations/TextFade";
 
 type CardItem = {
   title: string;
@@ -80,14 +81,15 @@ const FeetProblems = () => {
         className="w-full lg:w-[90%] grid grid-cols-1 lg:grid-cols-2 p-2 lg:p-10 gap-4 "
       >
         {CardDate.map((item, key) => (
-          <Card
-            key={item.title}
-            keyItem={key}
-            title={item.title}
-            description={item.description}
-            img={item.img}
-            open={item.open}
-          />
+          <TextFadeIn key={item.title}>
+            <Card
+              keyItem={key}
+              title={item.title}
+              description={item.description}
+              img={item.img}
+              open={item.open}
+            />
+          </TextFadeIn>
         ))}
       </div>
     </section>
