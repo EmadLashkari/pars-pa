@@ -1,5 +1,4 @@
 import Image from "next/image";
-import IconButton from "../main/Button/IconButton";
 import { IoStar } from "react-icons/io5";
 import { FaQuoteLeft } from "react-icons/fa";
 import { data } from "@/data/comments/comments";
@@ -7,6 +6,7 @@ import { data } from "@/data/comments/comments";
 const Testminials = () => {
   return (
     <div
+      id="comments"
       dir="rtl"
       className="bg-white w-full flex flex-col lg:flex-row justify-center items-center lg:items-stretch lg:justify-around lg:py-20"
     >
@@ -22,6 +22,7 @@ const Testminials = () => {
                 name={item.name}
               />
               <CardDesktop
+                rate={item.rate}
                 key={item.title}
                 index={index}
                 title={item.title}
@@ -96,12 +97,15 @@ function CardDesktop({
   url,
   title,
   index,
+  rate,
 }: {
   name: string;
   url: any;
   title: string;
   index: number;
+  rate: number;
 }) {
+  const numbers = [...Array(rate)].map((_, index) => index + 1);
   return (
     <div
       className={`hover:translate-x-5 transition-all ease-in-out hover:border-blue-400 w-[40rem] hidden border-[#C6EDF7] border-s-[10px] lg:flex flex-col justify-between items-start bg-opacity-25 bg-[#C6EDF7] p-5 rounded-3xl`}
@@ -124,11 +128,9 @@ function CardDesktop({
       </div>
 
       <div className="self-end flex justify-end gap-2">
-        <IoStar className="text-[#FFA800] text-lg" />
-        <IoStar className="text-[#FFA800] text-lg" />
-        <IoStar className="text-[#FFA800] text-lg" />
-        <IoStar className="text-[#FFE8AF] text-lg" />
-        <IoStar className="text-[#FFE8AF] text-lg" />
+        {numbers.map((item) => (
+          <IoStar key={item} className="text-[#FFA800] text-lg" />
+        ))}
       </div>
     </div>
   );

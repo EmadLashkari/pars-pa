@@ -8,7 +8,7 @@ import phone from "@/public/image/phone.svg";
 function Contacts() {
   return (
     <section
-      id="contactus"
+      id="contact-us"
       className="w-screen min-h-screen pb-72 pt-4  sm:pb-0 bg-primary100 flex justify-center items-center relative  "
     >
       <Image

@@ -40,22 +40,34 @@ const Slider = () => {
               پا
             </h1>
           </div>
-          <Item icon={<Home size={25} variant="Outline" />} text="خانه" />
-          <Item icon={<Scan size={25} variant="Outline" />} text="آنالیز" />
           <Item
+            where="#home"
+            icon={<Home size={25} variant="Outline" />}
+            text="خانه"
+          />
+          <Item
+            where="#analize"
+            icon={<Scan size={25} variant="Outline" />}
+            text="آنالیز"
+          />
+          <Item
+            where="#app"
             icon={<Category size={25} variant="Outline" />}
             text="اپلیکیشن"
           />
           {/* <Item icon={<Category/>} text="کفی" /> */}
           <Item
+            where="#our-team"
             icon={<Profile2User size={25} variant="Outline" />}
             text="تیم ما"
           />
           <Item
+            where="#comments"
             icon={<MessageText size={25} variant="Outline" />}
             text="نظرات"
           />
           <Item
+            where="#contact-us"
             icon={<TagUser size={25} variant="Outline" />}
             text="ارتباط با ما"
           />
@@ -65,10 +77,18 @@ const Slider = () => {
   );
 };
 
-function Item({ text, icon }: { text: string; icon: ReactNode }) {
+function Item({
+  where,
+  text,
+  icon,
+}: {
+  where: string;
+  text: string;
+  icon: ReactNode;
+}) {
   return (
     <a
-      href="#our-team"
+      href={where}
       dir="rtl"
       className="text-title p-3 rounded-lg bg-white w-full  hover:text-gray6 transition-all ease-in-out text-sm Poppins-Light cursor-pointer group flex flex-row justify-start items-center  gap-3 relative"
     >

@@ -18,6 +18,7 @@ import Image from "next/image";
 function Features() {
   return (
     <section
+      id="why-us"
       dir="rtl"
       className="w-screen pb-12 sm:pb-32 pt-12 min-h-[400px] bg-[#C6EDF7] flex items-start justify-center  px-12 sm:px-24"
     >

@@ -1,12 +1,8 @@
 "use client";
-import { HambergerMenu, ShoppingCart } from "iconsax-react";
 import Image from "next/image";
-import { SVGProps, useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "@/public/image/Logo.svg";
-import { MotionProps, useCycle } from "framer-motion";
-import { useDimensions } from "@/components/utils/navbar/useDimensions";
 const scrollValue = 50;
-import { motion } from "framer-motion";
 
 const Header = () => {
   const [change, setChange] = useState(false);
@@ -39,49 +35,49 @@ const Header = () => {
       </div>
       <nav className="hidden md:flex justify-between items-center gap-8">
         <a
-          href="#contactus"
+          href="#home"
           className="text-title hover:text-gray6 transition-all ease-in-out  text-base Poppins-Light cursor-pointer group relative"
         >
           خانه
           <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
         </a>
         <a
-          href="#our-team"
+          href="#analize"
           className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
         >
           آنالیز
           <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
         </a>
         <a
-          href="#our-product"
+          href="#app"
           className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
         >
           اپلیکیشن
           <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
         </a>
         <a
-          href="#our-product"
+          href="#why-us"
           className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
         >
           کفی
           <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
         </a>
         <a
-          href="#our-product"
+          href="#our-team"
           className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
         >
           تیم ما
           <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
         </a>
         <a
-          href="#our-product"
+          href="#comments"
           className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
         >
           نظرات
           <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
         </a>
         <a
-          href="#our-product"
+          href="#contact-us"
           className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
         >
           ارتباط با ما

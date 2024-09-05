@@ -9,6 +9,7 @@ import ImageTop from "../animations/ImageTop";
 const DownloadApp = () => {
   return (
     <div
+      id="app"
       dir="rtl"
       className="w-full h-[100vh]  bg-white lg:bg-bg-sec-color flex flex-col justify-around py-5 items-center lg:px-20 lg:flex-row"
     >

@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import hellSpur from "@/public/image/hell-spur.png";
-import knock from "@/public/image/knock-knees.png";
-import bowleg from "@/public/image/bowlegs.png";
-import bun from "@/public/image/bunion.png";
-import backpain from "@/public/image/lower-back-pain.png";
+import knock from "@/public/image/ALLUX-VALGUS.png";
+import bowleg from "@/public/image/pa-parantecies.jpg";
+import bun from "@/public/image/pa-zarbdari.jpg";
+import backpain from "@/public/image/back-pain.jpg";
 import walking from "@/public/image/fatigue-walking.png";
-import ankle from "@/public/image/frequent-ankle.png";
+import ankle from "@/public/image/pichkhordegi.jpg";
 
 type CardItem = {
   title: string;
@@ -104,7 +104,7 @@ const Card = ({ title, description, img, keyItem, open }: CardItem) => {
       <Image
         src={img}
         alt={title}
-        className={`w-20 h-20 hidden lg:block  ${
+        className={`w-20 h-20 hidden lg:block rounded-lg  ${
           keyItem === 0 ? "lg:w-56 lg:h-56" : "lg:w-24 lg:h-24"
         }`}
       />
