@@ -1,7 +1,4 @@
-import ali from "@/public/image/ali.svg";
-import maryam from "@/public/image/maryam.svg";
-import saeed from "@/public/image/saeed.svg";
-
+import avatar from "@/public/image/Avatar.svg";
 export const data: {
   title: string;
   name: string;
@@ -12,95 +9,95 @@ export const data: {
     title:
       "خیلی راحت و سبکن. از وقتی این کفی‌ها رو استفاده می‌کنم، درد خار پاشنه‌م خیلی بهتر شده.",
     rate: 5,
-    url: ali,
+    url: avatar,
     name: "علی",
   },
   {
     title: "کیفیت کفی ها خوبه و واقعاً رو درد کمرم تاثیر گذاشت.",
     rate: 5,
-    url: maryam,
+    url: avatar,
     name: "مریم",
   },
   {
     title: "یه ذره طول کشید تا بهشون عادت کنم، ولی حالا خیلی راضی‌ام.",
     rate: 4,
-    url: saeed,
+    url: avatar,
     name: "سعید",
   },
   {
     title: "بعد از کلی امتحان کردن کفی‌های مختلف، این یکی بهترین بوده.",
     rate: 5,
-    url: ali,
-    name: "علی",
+    url: avatar,
+    name: "محمد",
   },
   {
     title: "از وقتی این کفی‌ها رو گذاشتم تو کفشم، درد کف پام کاملاً رفع شده.",
     rate: 5,
-    url: maryam,
-    name: "مریم",
+    url: avatar,
+    name: "اکبر",
   },
   {
     title: "کفی‌ها راحتی خوبی دارن، ولی امیدوارم دوامشون هم بالا باشه.",
     rate: 4,
-    url: saeed,
-    name: "سعید",
+    url: avatar,
+    name: "علی رضا",
   },
   {
     title: "این کفی‌ها فوق‌العادن، انگار برای پاهای من طراحی شدن.",
     rate: 5,
-    url: maryam,
-    name: "مریم",
+    url: avatar,
+    name: "طاها",
   },
   {
     title:
       "نسبت به قیمتشون کیفیت خوبی دارن، ولی شاید برای بعضی کفش‌ها مناسب نباشن.",
     rate: 4,
-    url: ali,
-    name: "علی",
+    url: avatar,
+    name: "فرهاد",
   },
   {
     title: "از وقتی این کفی‌ها رو گذاشتم تو کفشم، درد در مچ پام از بین رفته.",
     rate: 5,
-    url: saeed,
-    name: "سعید",
+    url: avatar,
+    name: "امیر",
   },
   {
     title: "کفی‌ها خوبن، ولی یه کم طول کشید تا بهشون عادت کنم.",
     rate: 4,
-    url: maryam,
-    name: "مریم",
+    url: avatar,
+    name: "امیرعلی",
   },
   {
     title: "خیلی از خرید این کفی‌ها راضیم. راحتی و حمایت فوق‌العاده‌ای دارن.",
     rate: 5,
-    url: maryam,
-    name: "مریم",
+    url: avatar,
+    name: "محمدرضا",
   },
   {
     title: "کیفیتشون خوبه، ولی یکم گرونن.",
     rate: 4,
-    url: ali,
-    name: "علی",
+    url: avatar,
+    name: "سید ابراهیم",
   },
 
   {
     title: "بی‌نظیره! کفی‌ها دقیقاً با فرم پای من هماهنگ شدن.",
     rate: 5,
-    url: maryam,
+    url: avatar,
     name: "مریم",
   },
 
   {
     title: "بعد از چند هفته استفاده، احساس می‌کنم درد زانوم خیلی بهتر شده.",
     rate: 5,
-    url: ali,
-    name: "علی",
+    url: avatar,
+    name: "فاطمه",
   },
 
   {
     title: "کفی‌ها راحتی خوبی دارن، ولی برای کفش‌های رسمی شاید کمی بزرگ باشن.",
     rate: 4,
-    url: ali,
-    name: "علی",
+    url: avatar,
+    name: "ناهید",
   },
 ];

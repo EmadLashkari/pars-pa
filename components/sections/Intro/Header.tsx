@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Logo from "@/public/image/Logo.svg";
+import Link from "next/link";
 const scrollValue = 50;
 
 const Header = () => {
@@ -85,9 +86,12 @@ const Header = () => {
         </a>
       </nav>
       <div className="flex gap-2 items-center">
-        <button className="px-8 hidden md:block py-2 bg-primary950 transition-all ease-out hover:bg-primary-900 hover:shadow-lg text-white rounded-xl">
+        <Link
+          href={"https://web.parspa-ai.ir/login"}
+          className="px-8 hidden md:block py-2 bg-primary950 transition-all ease-out hover:bg-primary-900 hover:shadow-lg text-white rounded-xl"
+        >
           ورود
-        </button>
+        </Link>
         {/* <button
           title="cart"
           onClick={() => console.log(123)}

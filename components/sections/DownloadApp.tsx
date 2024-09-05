@@ -1,17 +1,18 @@
 import Image from "next/image";
 import React from "react";
-import Mobiles from "@/public/image/mobiles.svg";
+import Mobiles from "@/public/image/mobiles.png";
 import AppStore from "@/public/image/AppStore.svg";
 import GooglePlay from "@/public/image/GooglePlay.svg";
 import TextFadeIn from "../animations/TextFade";
 import ImageTop from "../animations/ImageTop";
+import Link from "next/link";
 
 const DownloadApp = () => {
   return (
     <div
       id="app"
       dir="rtl"
-      className="w-full h-[100vh]  bg-white lg:bg-bg-sec-color flex flex-col justify-around py-5 items-center lg:px-20 lg:flex-row"
+      className="w-full h-full gap-4  bg-white lg:bg-bg-sec-color flex flex-col justify-around py-5 items-center lg:px-20 lg:flex-row"
     >
       <Discription />
 
@@ -24,9 +25,13 @@ const DownloadApp = () => {
 
       {/* download buttons */}
       <div className="flex flex-col w-[50%] gap-2 lg:gap-10 justify-center items-center">
-        <button className="p-3 bg-black-bold text-white rounded-lg">
+        <a
+          href={"https://dl.parspa-ai.ir/parspa.apk"}
+          download
+          className="p-3 bg-black-bold text-white rounded-lg text-nowrap"
+        >
           دانلود مستقیم اپلیکیشن
-        </button>
+        </a>
       </div>
     </div>
   );

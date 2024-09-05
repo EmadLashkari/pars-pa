@@ -43,27 +43,27 @@ function Footer() {
               <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
             </li>
             <li className="text-lg Poppins-Light text-[#505050] relative">
-              <a href="">آنالیز</a>
+              <a href="#analize">آنالیز</a>
               <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
             </li>
             <li className="text-lg Poppins-Light text-[#505050] relative">
-              <a href="">اپلیکیشن</a>
+              <a href="#app">اپلیکیشن</a>
               <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
             </li>
             <li className="text-lg Poppins-Light text-[#505050] relative">
-              <a href="">کفی</a>
+              <a href="#why-us">کفی</a>
               <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
             </li>
             <li className="text-lg Poppins-Light text-[#505050] relative">
-              <a href="">تیم ما</a>
+              <a href="#our-team">تیم ما</a>
               <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
             </li>
             <li className="text-lg Poppins-Light text-[#505050] relative">
-              <a href="">نظرات</a>
+              <a href="#comments">نظرات</a>
               <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
             </li>
             <li className="text-lg Poppins-Light text-[#505050] relative">
-              <a href="">ارتباط با ما</a>
+              <a href="#contact-us">ارتباط با ما</a>
               <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
             </li>
           </ul>

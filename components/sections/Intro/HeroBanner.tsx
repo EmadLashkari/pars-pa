@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import styles from "@/styles/sections/hero.module.scss";
 import arrow from "@/public/image/arrow.png";
 import Counter from "@/components/animations/Counter";
+import Link from "next/link";
 
 const HeroBanner = () => {
   return (
@@ -29,7 +30,8 @@ const HeroBanner = () => {
           آگاه میکنیم. همچنین در صورت نیاز، با استفاده از دستگاه‌های پیشرفته و
           هوشمند، کفی‌های مخصوص هر پای شما طراحی و تولید میکنیم.
         </p>
-        <button
+        <Link
+          href={"https://web.parspa-ai.ir/login"}
           className={`bg-primary950 p-4 gap-3 hover:bg-primary800 shadow-lg hover:shadow-2xl transition-all ease-linear group text-white rounded-[15px] text-lg flex Poppins-SemiBold justify-around items-center ${styles.parag} `}
         >
           شروع آنالیز
@@ -40,7 +42,7 @@ const HeroBanner = () => {
             src={arrow}
             className="w-2 object-cover scale-x-[-1] group-hover:-translate-x-2 transition-all ease-linear duration-200"
           />
-        </button>
+        </Link>
         <div>
           <div className="flex flex-row justify-center items-center lg:pt-20 gap-2">
             <Counter />
@@ -68,7 +70,7 @@ function DoctorImage() {
       <Image
         src={Doctor}
         alt=""
-        className={`w-[280px] h-[343px]  z-30  lg:w-[650px] lg:h-[750px] ${styles.image}`}
+        className={`w-[280px] h-[343px]  z-30  lg:w-[550px] lg:h-[650px] ${styles.image}`}
       />
       <div
         className={`z-0 absolute bottom-0 left-0 ${styles.bgImage} ${styles.move}`}
