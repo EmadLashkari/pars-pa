@@ -42,7 +42,7 @@ export default DownloadApp;
 function Discription() {
   return (
     <TextFadeIn>
-      <div className="px-5 flex flex-col justify-between items-start lg:gap-10">
+      <div className="px-5 w-full flex flex-col justify-between items-start lg:gap-10">
         <h2 className="font-poppins text-start text-[20px] lg:text-[30px] font-bold text-black-bold w-52 lg:w-72 leading-8 lg:leading-10">
           اپلیکیشن پارس پا
         </h2>

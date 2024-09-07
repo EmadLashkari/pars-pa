@@ -13,7 +13,7 @@ const HeroBanner = () => {
   return (
     <section
       dir="rtl"
-      className="w-full h-auto flex flex-col lg:flex-row justify-between items-center lg:items-center lg:justify-around overflow-hidden"
+      className="w-full h-auto  flex flex-col lg:flex-row justify-between items-center lg:items-center lg:justify-around overflow-hidden"
     >
       <div className=" w-fit flex flex-col items-center md:items-start lg:mt-24 lg:ml-10 sm:px-5 gap-5">
         <h1
@@ -28,7 +28,7 @@ const HeroBanner = () => {
           ما با بهره‌گیری از هوش مصنوعی و مشاوره تخصصی فیزیوتراپیست‌ها، پاهای
           شما را به صورت رایگان آنالیز می‌کنیم و شما را نسبت به وضعیت کف پایتان
           آگاه میکنیم. همچنین در صورت نیاز، با استفاده از دستگاه‌های پیشرفته و
-          هوشمند، کفی‌های مخصوص هر پای شما طراحی و تولید میکنیم.
+          هوشمند، کفی‌های مخصوص پای شما را طراحی و تولید میکنیم.
         </p>
         <Link
           href={"https://web.parspa-ai.ir/login"}

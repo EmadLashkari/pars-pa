@@ -68,7 +68,7 @@ function CardMobile({
 }) {
   const numbers = [...Array(rate)].map((_, index) => index + 1);
   return (
-    <div className="w-[20rem] lg:hidden border-[#C6EDF7] border-s-[10px] flex flex-col justify-between items-start bg-opacity-25 bg-[#C6EDF7] p-5 rounded-3xl">
+    <div className="w-[20rem] md:hidden border-[#C6EDF7] border-s-[10px] flex flex-col justify-between items-start bg-opacity-25 bg-[#C6EDF7] p-5 rounded-3xl">
       <div className="w-full px-2 flex flex-row justify-between items-center">
         <div className="self-end flex justify-end gap-2">
           {numbers.map((item) => (
@@ -108,9 +108,9 @@ function CardDesktop({
   const numbers = [...Array(rate)].map((_, index) => index + 1);
   return (
     <div
-      className={`hover:translate-x-5 transition-all ease-in-out hover:border-blue-400 w-[40rem] hidden border-[#C6EDF7] border-s-[10px] lg:flex flex-col justify-between items-start bg-opacity-25 bg-[#C6EDF7] p-5 rounded-3xl`}
+      className={`hover:translate-x-5 transition-all ease-in-out hover:border-blue-400 w-[40rem] hidden border-[#C6EDF7] border-s-[10px] md:flex flex-col justify-between items-start bg-opacity-25 bg-[#C6EDF7] p-5 rounded-3xl`}
     >
-      <div className="flex flex-row justify-center items-center">
+      <div className="flex flex-row justify-center items-center w-full">
         <Image
           alt="profile"
           className="w-[100px] h-[100px] rounded-full object-top "
@@ -118,12 +118,12 @@ function CardDesktop({
           width={10}
           height={10}
         />
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-start w-full gap-1">
           <div className="w-full px-5 flex flex-row justify-between items-center">
             <h2 className="text-black font-bold">{name}</h2>
             <FaQuoteLeft className="text-[#8F8F8F] transition-all ease-linear text-2xl group-hover:text-[#28BCBE]" />
           </div>
-          <p className="pr-5 py-1 leading-8">&quot;{title}&quot;</p>
+          <p className="pr-5 py-1 leading-8 text-right">&quot;{title}&quot;</p>
         </div>
       </div>
 

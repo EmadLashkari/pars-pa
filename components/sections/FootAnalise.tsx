@@ -12,7 +12,7 @@ const FootAnalise = () => {
       id="analize"
       className="w-full relative gap-10 h-full flex flex-col justify-between items-center bg-gradient-to-b from-bg-main-color to-bg-sec-color"
     >
-      <TextAnime text="آنالیز کف پا مبتنی بر هوش مصنوعی رایگان">
+      <TextAnime text="آنالیز رایگان کف پا مبتنی بر هوش مصنوعی ">
         <h2 className="text-black font-poppins font-bold text-[20px] lg:text-[30px] lg:mt-32 w-[80%] mt-10 text-center">
           آنالیز کف پا مبتنی بر هوش مصنوعی (رایگان)
         </h2>
