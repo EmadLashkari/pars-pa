@@ -12,6 +12,7 @@ import Link from "next/link";
 const HeroBanner = () => {
   return (
     <section
+      id="home"
       dir="rtl"
       className="w-full h-auto  flex flex-col lg:flex-row justify-between items-center lg:items-center lg:justify-around overflow-hidden"
     >
@@ -70,9 +71,9 @@ function DoctorImage() {
       <Image
         src={Doctor}
         alt=""
-        className={`w-[280px] h-[343px]  z-30  lg:w-[250px] lg:h-[350px] ${styles.image}`}
+        className={`w-[280px] h-[343px]  z-30  rounded-3xl ${styles.image}`}
       />
-      <div
+      {/* <div
         className={`z-0 absolute bottom-0 left-0 ${styles.bgImage} ${styles.move}`}
       >
         <Image alt="" src={BackImg} className="w-full object-cover" />
@@ -83,7 +84,7 @@ function DoctorImage() {
         height={377}
         src={SquareImg}
         className={`z-20 absolute top-10 left-0 lg:top-0 lg:left-0 ${styles.frame}`}
-      />
+      /> */}
     </div>
   );
 }

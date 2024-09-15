@@ -3,10 +3,73 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Logo from "@/public/image/Logo.svg";
 import Link from "next/link";
+import { useScroll } from "framer-motion";
 const scrollValue = 50;
+
+const links = [
+  {
+    name: "خانه",
+    link: "#home",
+  },
+  {
+    name: "آنالیز",
+    link: "#analize",
+  },
+  {
+    name: "اپلیکیشن",
+    link: "#app",
+  },
+  {
+    name: "کفی",
+    link: "#why-us",
+  },
+  {
+    name: "تیم ما",
+    link: "#our-team",
+  },
+  {
+    name: "نظرات",
+    link: "#comments",
+  },
+  {
+    name: "ارتباط با ما",
+    link: "#contact-us",
+  },
+];
 
 const Header = () => {
   const [change, setChange] = useState(false);
+  const [selected, setSelect] = useState<number>(0);
+  const [activeSection, setActiveSection] = useState("#home");
+
+  const { scrollYProgress } = useScroll();
+  // Sections to observe
+  console.log(scrollYProgress);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(`#${entry.target.id}`);
+          }
+        });
+      },
+      { threshold: 0.5 } // Trigger when 50% of the section is visible
+    );
+    console.log(observer);
+    links.forEach((section) => {
+      const sectionElement = document.querySelector(section.link);
+      if (sectionElement) observer.observe(sectionElement);
+    });
+
+    return () => {
+      links.forEach((section) => {
+        const sectionElement = document.querySelector(section.link);
+        if (sectionElement) observer.unobserve(sectionElement);
+      });
+    };
+  }, []);
+
   const handleNavigation = (e: any) => {
     const scrolled = e.currentTarget.scrollY;
 
@@ -35,55 +98,28 @@ const Header = () => {
         </h1>
       </div>
       <nav className="hidden md:flex justify-between items-center gap-8">
-        <a
-          href="#home"
-          className="text-title hover:text-gray6 transition-all ease-in-out  text-base Poppins-Light cursor-pointer group relative"
-        >
-          خانه
-          <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
-        </a>
-        <a
-          href="#analize"
-          className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
-        >
-          آنالیز
-          <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
-        </a>
-        <a
-          href="#app"
-          className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
-        >
-          اپلیکیشن
-          <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
-        </a>
-        <a
-          href="#why-us"
-          className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
-        >
-          کفی
-          <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
-        </a>
-        <a
-          href="#our-team"
-          className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
-        >
-          تیم ما
-          <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
-        </a>
-        <a
-          href="#comments"
-          className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
-        >
-          نظرات
-          <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
-        </a>
-        <a
-          href="#contact-us"
-          className="text-title hover:text-gray6 transition-all ease-in-out text-base Poppins-Light cursor-pointer group relative"
-        >
-          ارتباط با ما
-          <span className="w-0 group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute"></span>
-        </a>
+        {links.map((item, i) => {
+          return (
+            <a
+              key={i}
+              onClick={() => {
+                setSelect(i);
+                console.log(selected);
+              }}
+              href={item.link}
+              className={`text-title ${
+                selected === 1 && "text-gray6"
+              } hover:text-gray6 transition-all ease-in-out  text-base Poppins-Light cursor-pointer group relative`}
+            >
+              {item.name}
+              <span
+                className={`w-0 ${
+                  selected === i && "w-full"
+                } group-hover:w-full transition-all ease-in-out  h-[2px] bg-gray6 top-full left-0 absolute`}
+              ></span>
+            </a>
+          );
+        })}
       </nav>
       <div className="flex gap-2 items-center">
         <Link
