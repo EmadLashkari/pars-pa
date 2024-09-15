@@ -105,7 +105,6 @@ function Footer() {
                 width={50}
                 height={50}
                 style={{ cursor: "pointer" }}
-                code="RQ41o6W9ARKRxMHTP7kboWLoIk7gZiSV"
               />
             </a>
           </div>

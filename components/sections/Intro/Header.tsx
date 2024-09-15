@@ -42,34 +42,6 @@ const Header = () => {
   const [selected, setSelect] = useState<number>(0);
   const [activeSection, setActiveSection] = useState("#home");
 
-  const { scrollYProgress } = useScroll();
-  // Sections to observe
-  console.log(scrollYProgress);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(`#${entry.target.id}`);
-          }
-        });
-      },
-      { threshold: 0.5 } // Trigger when 50% of the section is visible
-    );
-    console.log(observer);
-    links.forEach((section) => {
-      const sectionElement = document.querySelector(section.link);
-      if (sectionElement) observer.observe(sectionElement);
-    });
-
-    return () => {
-      links.forEach((section) => {
-        const sectionElement = document.querySelector(section.link);
-        if (sectionElement) observer.unobserve(sectionElement);
-      });
-    };
-  }, []);
-
   const handleNavigation = (e: any) => {
     const scrolled = e.currentTarget.scrollY;
 
