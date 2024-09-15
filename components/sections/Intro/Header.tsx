@@ -29,8 +29,8 @@ const Header = () => {
     >
       <div className="flex items-center gap-1">
         <Image src={Logo} alt=" " width={64} height={55} />
-        <h1 className="text-[#009D6D] font-[700]">
-          <span className="text-[#3CCAFF]">پارس </span>
+        <h1 className="text-[#28BCBE] font-[700]">
+          <span className="text-[#83837F]">پارس </span>
           پا
         </h1>
       </div>

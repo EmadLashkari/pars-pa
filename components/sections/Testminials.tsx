@@ -42,12 +42,12 @@ function Info() {
     <div className="flex flex-col justify-center  lg:items-start xl:pr-20 items-center py-14 lg:py-0 lg:pb-32 lg:justify-between gap-10">
       <div className="flex flex-col lg:w-[60%] justify-center items-center lg:items-start gap-5">
         <h2 className="text-black-bold  text-[20px]  font-bold text-center lg:text-start">
-          نظرات مراجعین عزیزمان درباره تجربه استفاده از کفی های پارس پا
+          نظرات کاربران عزیز درباره تجربه استفاده از کفی های پارس پا
         </h2>
         <p className="text-black-bold text-center lg:text-start w-[18rem] lg:w-[38rem]">
-          ما در پارس پا به نظرات مراجعین عزیز خود اهمیت می‌دهیم و خوشحالیم که
+          ما در پارس پا به نظرات کاربران عزیز خود اهمیت می‌دهیم و خوشحالیم که
           توانسته‌ایم به بهبود سلامت پاهای آن‌ها کمک کنیم. در اینجا برخی از
-          نظرات مشتریان ما را مشاهده می‌کنید.
+          نظرات کاربران ما را مشاهده می‌کنید.
         </p>
       </div>
       {/* <IconButton text="بیشتر" /> */}

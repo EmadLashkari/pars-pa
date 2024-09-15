@@ -4,7 +4,7 @@ import React, { ReactNode, useState } from "react";
 import { motion, Variants } from "framer-motion";
 import { ArrowLeft2, ArrowRight2 } from "iconsax-react";
 type CardItem = {
-  url: string;
+  url: any;
   title: string;
   discription: string;
 };
@@ -62,7 +62,13 @@ const CardSliderAnime = ({
             <div className="flex flex-col gap-9 justify-center items-center p-10">
               {/* image  */}
               <div>
-                <Image width={200} height={200} src={item.url} alt="" />
+                <Image
+                  width={200}
+                  height={200}
+                  src={item.url}
+                  className="rounded-lg"
+                  alt=""
+                />
               </div>
               {/* text  */}
               <div className="flex flex-col gap-4 justify-center items-center">

@@ -4,9 +4,6 @@ import HoverScale from "../animations/CardScale";
 import TextFadeIn from "../animations/TextFade";
 import feet2 from "@/public/image/feet2.png";
 
-const exampleText =
-  "Custom Design Based on Your Needs Our orthopedic insoles are individually ";
-
 const OrProduct = () => {
   return (
     <div
@@ -20,13 +17,13 @@ const OrProduct = () => {
             کفی پارس پا
           </h2>
           <p className="text-black-bold text-center">
-            میدونی کفی پارس پا اختلال‌هایی را پوشش میدهد؟
+            مزیت های استفاده از کفی پارس پا
           </p>
         </div>
       </TextFadeIn>
       <div className="flex flex-col lg:flex-row justify-around items-center">
-        <div className="mt-5 lg:mt-20 flex flex-row justify-center items-center">
-          <Image src={Shous} alt="" className="lg:w-[500px] lg:h-[500px]" />
+        <div className="my-5 lg:mt-20 flex flex-row justify-center items-center">
+          <Image src={Shous} alt="" className="w-[80%] lg:w-[500px] " />
         </div>
         <div className=" grid grid-cols-1 md:grid-cols-2 justify-center justify-items-center gap-5">
           <Card
@@ -56,9 +53,9 @@ const OrProduct = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row-reverse justify-around items-center">
-        <div className="mt-5 lg:mt-20 flex flex-row justify-center items-center">
-          <Image src={feet2} alt="" className="lg:w-[500px] lg:h-[500px]" />
+      <div className="flex flex-col lg:flex-row-reverse justify-around items-center lg:pt-8">
+        <div className="my-5 lg:mt-20 flex flex-row justify-center items-center">
+          <Image src={feet2} alt="" className="w-[80%] lg:w-[500px]" />
         </div>
         <div className=" grid grid-cols-1 md:grid-cols-2 justify-center justify-items-center gap-5">
           <Card

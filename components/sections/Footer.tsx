@@ -21,8 +21,8 @@ function Footer() {
             شامل متخصصان فیزیوتراپی، کارشناسان نرم‌افزار و مهندسان ارتوپد فنی
             است. ما با بهره‌گیری از تحلیل‌های تخصصی و فناوری‌های هوش مصنوعی،
             کفی‌های کفش منحصربفرد متناسب به اختلالات پای هر فرد ارائه می‌دهیم.
-            هدف ما ارتقاء سلامت و راحتی گام بر داشتن شما از طریق تکنولوژی و
-            تخصص‌های پیشرفته است.
+            هدف ما ارتقاء سلامت و راحتی گام برداشتن شما به پشتوانه تکنولوژی و
+            تجربه متخصصین ما است.
           </p>
           <p
             dir="ltr"
@@ -93,6 +93,21 @@ function Footer() {
             <Image src={tel} alt="telegram icon" className="w-10 h-10" />
             <Image src={insta} alt="instagram icon" className="w-10 h-10" />
             <Image src={eitaa} alt="eitaa icon" className="w-8 h-8" />
+            <a
+              referrerPolicy="origin"
+              target="_blank"
+              href="https://trustseal.enamad.ir/?id=526758&Code=RQ41o6W9ARKRxMHTP7kboWLoIk7gZiSV"
+            >
+              <Image
+                referrerPolicy="origin"
+                src="https://trustseal.enamad.ir/logo.aspx?id=526758&Code=RQ41o6W9ARKRxMHTP7kboWLoIk7gZiSV"
+                alt=""
+                width={50}
+                height={50}
+                style={{ cursor: "pointer" }}
+                code="RQ41o6W9ARKRxMHTP7kboWLoIk7gZiSV"
+              />
+            </a>
           </div>
         </div>
       </div>
